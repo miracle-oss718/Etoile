@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Mon Étoile</title>
+  <meta name="description" content="Thank you for joining the Mon Étoile Inner Circle.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Thank You Page Styles */
+    .thank-you-section {
+      padding-top: 140px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thank-you-container {
+      text-align: center;
+      max-width: 700px;
+      padding: 60px 40px;
+    }
+    .thank-you-logo-wrap {
+      margin-bottom: 40px;
+    }
+    .thank-you-logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: contain;
+      display: inline-block;
+    }
+    .thank-you-label {
+      margin-bottom: 20px;
+    }
+    .thank-you-title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+      line-height: 1.2;
+    }
+    .thank-you-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-style: italic;
+      color: var(--gray-light);
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .thank-you-message {
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 50px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .thank-you-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .thank-you-btn-icon {
+      margin-right: 10px;
+    }
+    .thank-you-decor {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    .thank-you-decor-line {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+    .thank-you-decor-text {
+      color: var(--gold);
+      font-size: 0.7rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .cart-count-hidden {
+      display: none;
+    }
+    .cart-continue-btn {
+      margin-top: 20px;
+    }
+    .checkout-btn-full {
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Mon <span>Étoile</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Collection</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="currency-selector">
+        <select id="currencySelect">
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="NGN">NGN ₦</option>
+          <option value="CNY">CNY ¥</option>
+          <option value="JPY">JPY ¥</option>
+          <option value="CAD">CAD C$</option>
+          <option value="AUD">AUD A$</option>
+          <option value="CHF">CHF Fr</option>
+          <option value="AED">AED د.إ</option>
+          <option value="INR">INR ₹</option>
+          <option value="ZAR">ZAR R</option>
+          <option value="SGD">SGD S$</option>
+          <option value="KRW">KRW ₩</option>
+          <option value="BRL">BRL R$</option>
+        </select>
+      </div>
+      <div class="cart-icon" id="cartToggle">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count cart-count-hidden" id="cartCount">0</span>
+      </div>
+      <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Thank You Section -->
+  <section class="thank-you-section">
+    <div class="thank-you-container fade-in">
+
+      <!-- Gold Star Icon -->
+<div class="thank-you-logo-wrap">
+  <img
+    src="images/logo.png"
+    alt="Mon Étoile Logo"
+    class="thank-you-logo">
+</div>
+
+      <p class="section-label thank-you-label">Bienvenue</p>
+      <h1 class="thank-you-title">
+        Thank You
+      </h1>
+      <p class="thank-you-quote">
+        "Pour Ceux Qui Brillent"
+      </p>
+      <p class="thank-you-message">
+        Yours message has been received and is being processed by our team. We'll get back to you within 24 hours. Browse through our collections while you wait.
+      </p>
+
+      <div class="thank-you-buttons">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fas fa-home thank-you-btn-icon"></i>Return Home
+        </a>
+        <a href="products.html" class="btn btn-outline">
+          <i class="fas fa-gem thank-you-btn-icon"></i>Explore Collection
+        </a>
+      </div>
+
+      <!-- Decorative Line -->
+      <div class="thank-you-decor">
+        <span class="thank-you-decor-line"></span>
+        <span class="thank-you-decor-text">Mon Étoile</span>
+        <span class="thank-you-decor-line"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Mon <span>Étoile</span></a>
+      <p>Pour Ceux Qui Brillent. Luxury unisex accessories crafted with precision, passion, and an unwavering commitment to excellence.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html">Timepieces</a></li>
+        <li><a href="products.html">Fine Jewelry</a></li>
+        <li><a href="products.html">Leather Goods</a></li>
+        <li><a href="products.html">Eyewear</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Our Craftsmanship</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Checkout</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- Close .footer-grid -->
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Mon Étoile. All rights reserved. Pour Ceux Qui Brillent.</p>
+  </div>
+
+</footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <p>Your cart is empty</p>
+        <a href="products.html" class="btn btn-outline cart-continue-btn">Continue Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <a href="booking.html" class="btn btn-primary checkout-btn-full">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- Currency Modal -->
+  <div class="currency-modal" id="currencyModal">
+    <div class="currency-modal-content">
+      <button class="currency-modal-close" id="currencyModalClose">×</button>
+      <h3>Select Currency</h3>
+      <div class="currency-options">
+        <div class="currency-option" data-currency="USD">
+          <div class="currency-code">USD</div>
+          <div class="currency-name">US Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="EUR">
+          <div class="currency-code">EUR</div>
+          <div class="currency-name">Euro</div>
+        </div>
+        <div class="currency-option" data-currency="GBP">
+          <div class="currency-code">GBP</div>
+          <div class="currency-name">British Pound</div>
+        </div>
+        <div class="currency-option" data-currency="NGN">
+          <div class="currency-code">NGN</div>
+          <div class="currency-name">Nigerian Naira</div>
+        </div>
+        <div class="currency-option" data-currency="CNY">
+          <div class="currency-code">CNY</div>
+          <div class="currency-name">Chinese Yuan</div>
+        </div>
+        <div class="currency-option" data-currency="JPY">
+          <div class="currency-code">JPY</div>
+          <div class="currency-name">Japanese Yen</div>
+        </div>
+        <div class="currency-option" data-currency="CAD">
+          <div class="currency-code">CAD</div>
+          <div class="currency-name">Canadian Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="AUD">
+          <div class="currency-code">AUD</div>
+          <div class="currency-name">Australian Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="CHF">
+          <div class="currency-code">CHF</div>
+          <div class="currency-name">Swiss Franc</div>
+        </div>
+        <div class="currency-option" data-currency="AED">
+          <div class="currency-code">AED</div>
+          <div class="currency-name">UAE Dirham</div>
+        </div>
+        <div class="currency-option" data-currency="INR">
+          <div class="currency-code">INR</div>
+          <div class="currency-name">Indian Rupee</div>
+        </div>
+        <div class="currency-option" data-currency="ZAR">
+          <div class="currency-code">ZAR</div>
+          <div class="currency-name">South African Rand</div>
+        </div>
+        <div class="currency-option" data-currency="SGD">
+          <div class="currency-code">SGD</div>
+          <div class="currency-name">Singapore Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="KRW">
+          <div class="currency-code">KRW</div>
+          <div class="currency-name">South Korean Won</div>
+        </div>
+        <div class="currency-option" data-currency="BRL">
+          <div class="currency-code">BRL</div>
+          <div class="currency-name">Brazilian Real</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

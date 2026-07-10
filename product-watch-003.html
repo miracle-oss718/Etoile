@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurum Minimalist | Mon Étoile</title>
+  <meta name="description" content="View product details for Aurum Minimalist - Mon Étoile luxury accessories.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Mon <span>Étoile</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Collection</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html">Book Appointment</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="currency-selector">
+        <select id="currencySelect">
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="NGN">NGN ₦</option>
+          <option value="CNY">CNY ¥</option>
+          <option value="JPY">JPY ¥</option>
+          <option value="CAD">CAD C$</option>
+          <option value="AUD">AUD A$</option>
+          <option value="CHF">CHF Fr</option>
+          <option value="AED">AED د.إ</option>
+          <option value="INR">INR ₹</option>
+          <option value="ZAR">ZAR R</option>
+          <option value="SGD">SGD S$</option>
+          <option value="KRW">KRW ₩</option>
+          <option value="BRL">BRL R$</option>
+        </select>
+      </div>
+      <div class="cart-icon" id="cartToggle">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count" id="cartCount" style="display:none;">0</span>
+      </div>
+      <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- Product Detail -->
+  <section class="product-detail">
+    <div class="product-detail-grid">
+      <div class="product-gallery fade-in">
+        <img src="images/watch003.jpg" alt="Aurum Minimalist" class="product-main-img" id="productMainImg">
+        <div class="product-thumbs">
+          <img src="images/watch003.jpg" alt="View 1" class="product-thumb active">
+          <img src="images/watch001.jpg" alt="View 2" class="product-thumb">
+          <img src="images/watch002.jpg" alt="View 3" class="product-thumb">
+          <img src="images/watch004.jpg" alt="View 4" class="product-thumb">
+        </div>
+      </div>
+
+      <div class="product-detail-info fade-in">
+        <p class="product-detail-category">Timepieces</p>
+        <h1 class="product-detail-name">The Open-Heart Mechanical Statement</h1>
+        <p class="product-detail-price" data-price-usd="400">$400.00</p>
+
+        <p class="product-detail-desc">
+          <strong>BULOVA (Classic Automatic)</strong><br><br>
+          Celebrate the intricate artistry of traditional mechanical horology. This captivating dress watch features a multi-layered, textured black dial with elegant Roman numeral hour markers, instantly evoking a sense of old-world sophistication. Its defining characteristic is the "open-heart" window and skeletonized sub-dials, allowing you to watch the beating heart of its automatic movement in real-time. Finished with a premium embossed black leather strap, it is the perfect companion for formal evenings and tailored attire.
+        </p>
+
+        <div class="product-features">
+          <h4>Specifications</h4>
+          <ul>
+            <li>Open-Heart Dial Design</li>
+            <li>Roman Numeral Indices</li>
+            <li>Textured Guilloché Dial</li>
+            <li>Alligator-Embossed Leather Strap</li>
+            <li>Dual Sub-Dial Display</li>
+          </ul>
+        </div>
+
+        <div class="product-quantity">
+          <span class="quantity-label">Quantity</span>
+          <div class="quantity-controls">
+            <button class="quantity-btn" id="qtyMinus">−</button>
+            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10">
+            <button class="quantity-btn" id="qtyPlus">+</button>
+          </div>
+        </div>
+
+        <div class="product-detail-actions">
+          <button class="btn btn-primary" id="addToCartBtn" data-id="watch-003" data-name="The Open-Heart Mechanical Statement" data-price="400" data-image="images/watch003.jpg">
+            <i class="fas fa-shopping-bag" style="margin-right: 10px;"></i>Add to Cart
+          </button>
+          <a href="booking.html" class="btn btn-outline">
+            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i>Book Viewing
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="section products-section">
+    <div class="section-header fade-in">
+      <p class="section-label">You May Also Like</p>
+      <h2 class="section-title">Related Pieces</h2>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card fade-in">
+        <div class="product-img-wrapper">
+          <img src="images/watch001.jpg" alt="Chronos Elite Watch" class="product-img">
+          <span class="product-badge">New</span>
+          <div class="product-actions">
+            <button class="product-action-btn" onclick="quickAddToCart(this)" data-id="watch-001" data-name="The Diamond-Dial Dress Watch" data-price="14000" data-image="images/watch001.jpg"><i class="fas fa-shopping-bag"></i></button>
+            <a href="product-watch-001.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Timepieces</p>
+          <h3 class="product-name">The Diamond-Dial Dress Watch</h3>
+          <p class="product-price" data-price-usd="14000">$14,000.00</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <div class="product-img-wrapper">
+          <img src="images/watch002.jpg" alt="Midnight Chronograph" class="product-img">
+          
+          <div class="product-actions">
+            <button class="product-action-btn" onclick="quickAddToCart(this)" data-id="watch-002" data-name="The Modern Panda Chronograph" data-price="500" data-image="images/watch002.jpg"><i class="fas fa-shopping-bag"></i></button>
+            <a href="product-watch-002.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Timepieces</p>
+          <h3 class="product-name">The Modern "Panda" Chronograph</h3>
+          <p class="product-price" data-price-usd="500.00">$500.00</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <div class="product-img-wrapper">
+          <img src="images/ring002.jpg" alt="Lumière Signet Ring" class="product-img">
+          <span class="product-badge">Limited</span>
+          <div class="product-actions">
+            <button class="product-action-btn" onclick="quickAddToCart(this)" data-id="jewelry-002" data-name="The Art Deco Crossover Diamond Band" data-price="900" data-image="images/ring001.jpg"><i class="fas fa-shopping-bag"></i></button>
+            <a href="product-jewelry-002.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Fine Jewelry</p>
+          <h3 class="product-name">The Art Deco Crossover Diamond Band</h3>
+          <p class="product-price" data-price-usd="900">$900.00</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Mon <span>Étoile</span></a>
+      <p>Pour Ceux Qui Brillent. Luxury unisex accessories crafted with precision, passion, and an unwavering commitment to excellence.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html">Timepieces</a></li>
+        <li><a href="products.html">Fine Jewelry</a></li>
+        <li><a href="products.html">Leather Goods</a></li>
+        <li><a href="products.html">Eyewear</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Our Craftsmanship</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.html">Checkout</a></li>
+      </ul>
+    </div>
+
+  </div> <!-- Close .footer-grid -->
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Mon Étoile. All rights reserved. Pour Ceux Qui Brillent.</p>
+  </div>
+
+</footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <p>Your cart is empty</p>
+        <a href="products.html" class="btn btn-outline" style="margin-top: 20px;">Continue Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <a href="booking.html" class="btn btn-primary" style="width: 100%; text-align: center;">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- Currency Modal -->
+  <div class="currency-modal" id="currencyModal">
+    <div class="currency-modal-content">
+      <button class="currency-modal-close" id="currencyModalClose">×</button>
+      <h3>Select Currency</h3>
+      <div class="currency-options">
+        <div class="currency-option" data-currency="USD">
+          <div class="currency-code">USD</div>
+          <div class="currency-name">US Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="EUR">
+          <div class="currency-code">EUR</div>
+          <div class="currency-name">Euro</div>
+        </div>
+        <div class="currency-option" data-currency="GBP">
+          <div class="currency-code">GBP</div>
+          <div class="currency-name">British Pound</div>
+        </div>
+        <div class="currency-option" data-currency="NGN">
+          <div class="currency-code">NGN</div>
+          <div class="currency-name">Nigerian Naira</div>
+        </div>
+        <div class="currency-option" data-currency="CNY">
+          <div class="currency-code">CNY</div>
+          <div class="currency-name">Chinese Yuan</div>
+        </div>
+        <div class="currency-option" data-currency="JPY">
+          <div class="currency-code">JPY</div>
+          <div class="currency-name">Japanese Yen</div>
+        </div>
+        <div class="currency-option" data-currency="CAD">
+          <div class="currency-code">CAD</div>
+          <div class="currency-name">Canadian Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="AUD">
+          <div class="currency-code">AUD</div>
+          <div class="currency-name">Australian Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="CHF">
+          <div class="currency-code">CHF</div>
+          <div class="currency-name">Swiss Franc</div>
+        </div>
+        <div class="currency-option" data-currency="AED">
+          <div class="currency-code">AED</div>
+          <div class="currency-name">UAE Dirham</div>
+        </div>
+        <div class="currency-option" data-currency="INR">
+          <div class="currency-code">INR</div>
+          <div class="currency-name">Indian Rupee</div>
+        </div>
+        <div class="currency-option" data-currency="ZAR">
+          <div class="currency-code">ZAR</div>
+          <div class="currency-name">South African Rand</div>
+        </div>
+        <div class="currency-option" data-currency="SGD">
+          <div class="currency-code">SGD</div>
+          <div class="currency-name">Singapore Dollar</div>
+        </div>
+        <div class="currency-option" data-currency="KRW">
+          <div class="currency-code">KRW</div>
+          <div class="currency-name">South Korean Won</div>
+        </div>
+        <div class="currency-option" data-currency="BRL">
+          <div class="currency-code">BRL</div>
+          <div class="currency-name">Brazilian Real</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
